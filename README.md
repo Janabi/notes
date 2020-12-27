@@ -5,7 +5,7 @@
 ### Author: Abdulrahman AL-Janabi
 
 ### Links and Resources
-- [Submission PR]()
+- [Submission PR](https://github.com/Janabi/notes/pull/1)
 
 ### Modules 
 node.js
