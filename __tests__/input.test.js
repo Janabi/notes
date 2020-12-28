@@ -12,12 +12,12 @@ minimist.mockImplementation(()=>{
 
 describe('Input Module', ()=>{
     
-    it('Valid() respects url and method', ()=>{
+    it('Valid() has a truthy action and payload', ()=>{
         let notes = new Input();
         expect(notes.valid()).toBeTruthy();
     })
 
-    it('Valid() respects url and method', ()=>{
+    it('Valid() has falsy action and payload', ()=>{
         let notes = new Input();
         expect(notes.valid()).not.toBeFalsy();
     })

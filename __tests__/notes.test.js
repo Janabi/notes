@@ -4,15 +4,15 @@ const Note = require('../lib/notes');
 
 jest.spyOn(global.console, 'log');
 
-describe('HTTP Module', ()=> {
+describe('Note Module', ()=> {
 
-    it('fetch() does nothing with invalid options', ()=> {
+    it('add() does nothing with invalid note', ()=> {
         const note = new Note();
         note.add({payload: true});
         expect(console.log).not.toHaveBeenCalled();
     });
 
-    it('fetch() logs out result when given options', ()=> {
+    it('add() logs out result when given note', ()=> {
         const note = new Note();
         note.add({payload: "Hello"});
         expect(console.log).toHaveBeenCalled();
