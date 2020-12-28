@@ -2,10 +2,10 @@
 
 'use strict';
 
-const Add = require('./lib/input');
+const Input = require('./lib/input');
 const Note = require('./lib/notes');
 
-const add = new Add();
+const input = new Input();
 const note = new Note();
-
-note.execute(add);
+console.log('--------------------');
+note.execute(input);
