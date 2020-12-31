@@ -23,9 +23,15 @@ const note = new Note();
 console.log('--------------------');
 
 async function doExecuting() {
-    await note.execute(input);
-    console.log("Done!")
-    mongoose.disconnect();
+    try {
+        await note.execute(input);
+        console.log("Done!")
+        mongoose.disconnect();
+
+    } catch(err) {
+        console.error(err)
+        mongoose.disconnect()
+    }
 }
 
 doExecuting()
